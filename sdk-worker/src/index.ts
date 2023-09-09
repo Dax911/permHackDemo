@@ -93,7 +93,7 @@ const startNewConnectionProcess = async () => {
 
 const start = async () => {
   try {
-    console.debug(`start NodeJS example`);
+    console.debug(`Auction House Instance: ${sdk}`);
 
     const accounts = await sdk.connect();
     console.log('connect request accounts', accounts);
@@ -138,7 +138,7 @@ const start = async () => {
           console.log('Bid history', bidHistory);
 
           // Start a new connection process
-          await startNewConnectionProcess();
+          //await startNewConnectionProcess();
         } else {
           console.log('Maximum number of different wallet connections reached.');
         }
